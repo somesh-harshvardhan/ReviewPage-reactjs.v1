@@ -17,7 +17,7 @@ function App() {
     setViewer_id(()=>(newViewer_id))
    }
 
- console.log(data)
+ 
  useEffect(()=>{
   async function fetchApi(){
     let prodcutid=product_id;

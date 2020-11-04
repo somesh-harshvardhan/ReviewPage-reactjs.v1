@@ -27,7 +27,6 @@ function Pagination({totalReviews,postsPerPage,paginate}) {
     for (let i = 1; i <= Math.ceil(totalReviews.length / postsPerPage); i++) {
       pageNumbers.push(i);
     }
-    console.log(pageNumbers)
     return (
         <Wrapper>
             {
