@@ -16,16 +16,17 @@ function App() {
     setProduct_id(()=>(newProduct_id));
     setViewer_id(()=>(newViewer_id))
    }
-   async function fetchApi(){
-     let prodcutid=product_id;
-     let viewerid=viewer_id;
-    const response=await axios.get(`/reviews/${prodcutid}/${viewerid}`)
-    const daTa= await response;
-    setData(daTa)  
- } 
+
  console.log(data)
  useEffect(()=>{
-  fetchApi();
+  async function fetchApi(){
+    let prodcutid=product_id;
+    let viewerid=viewer_id;
+   const response=await axios.get(`/reviews/${prodcutid}/${viewerid}`)
+   const daTa= await response;
+   setData(daTa)  
+} 
+fetchApi();
  },[product_id,viewer_id])
  
 
