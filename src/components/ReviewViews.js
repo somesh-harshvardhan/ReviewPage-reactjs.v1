@@ -10,6 +10,13 @@ background-color:#f1faee;
 margin:10px;
 border-radius:10px;
 line-height:30px;
+@media (max-width:768px){
+        width:380px;
+        font-size:15px;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
 `
 const Button=styled.button`
 outline:none;

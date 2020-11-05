@@ -1,18 +1,25 @@
 import React,{useRef} from 'react'
 import styled from 'styled-components'
-const Form=styled.form({
-    fontSize:"20px",
-    width:"805px",
-    backgroundColor:"#f1faee",
-    display:"flex",
-    justifyContent:"space-around",
-    alignItems:"center",
-    alignSelf:"center",
-    boxShadow:"0px 3px 4px rgba(0,0,0,0.75)",
-    marginTop:"10px",
-    marginLeft:"10px",
-    borderRadius:"10px"
-})
+const Form=styled.form`
+    font-size:20px;
+    width:805px;
+    background-color:#f1faee;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    color: #141414;
+    @media (max-width:768px){
+        margin-top:10px;
+        width:385px;
+        font-size:15px;
+        margin-left:5px;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    `
+
 const Div=styled.div`
 display:inline-block;
 margin:10px;
@@ -31,6 +38,7 @@ font-size:25px;
 outline:none;
 border:none;
 cursor:pointer;
+color:#fff;
 border-radius:5px;
 :hover{
     filter:brightness(110%);
@@ -38,6 +46,9 @@ border-radius:5px;
 :active{
     transform:scale(0.9);
 }
+@media (max-width:768px){
+    font-size:19px;
+    padding:4px 8px;}
 `
     
    

@@ -8,7 +8,13 @@ display:flex;
 flex-direction:row;
 justify-content:space-around;
 align-items:center;
-margin:10px
+margin:10px;
+@media (max-width:768px){
+      width:100%;
+      flex-direction:column;
+      justify-content:center;
+      word-break:break-all
+    }
 `
 const Button=styled.button`
 padding:5px 5px;
@@ -20,6 +26,12 @@ background-color:#fff;
 :active{
     transform:scale(.95)
 }
+@media (max-width:768px){
+      width:150px;
+      margin-bottom:5px;
+      
+    }
+
 `
 function Reviews({data}) {
     const [status,setStatus]=useState(0)
